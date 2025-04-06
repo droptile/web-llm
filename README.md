@@ -1,10 +1,10 @@
 <div align="center" id="top">
 
 # WebLLM
-[![NPM Package](https://img.shields.io/badge/NPM_Package-Published-cc3534)](https://www.npmjs.com/package/@mlc-ai/web-llm)
+[![NPM Package](https://img.shields.io/badge/NPM_Package-Published-cc3534)](https://www.npmjs.com/package/@droptile/web-llm)
 [!["WebLLM Chat Deployed"](https://img.shields.io/badge/WebLLM_Chat-Deployed-%2332a852)](https://chat.webllm.ai/)
 [![Join Discord](https://img.shields.io/badge/Join-Discord-7289DA?logo=discord&logoColor=white)](https://discord.gg/9Xpy2HGBuD)
-[![Related Repository: WebLLM Chat](https://img.shields.io/badge/Related_Repo-WebLLM_Chat-fafbfc?logo=github)](https://github.com/mlc-ai/web-llm-chat/)
+[![Related Repository: WebLLM Chat](https://img.shields.io/badge/Related_Repo-WebLLM_Chat-fafbfc?logo=github)](https://github.com/droptile/web-llm-chat/)
 [![Related Repository: MLC LLM](https://img.shields.io/badge/Related_Repo-MLC_LLM-fafbfc?logo=github)](https://github.com/mlc-ai/mlc-llm/)
 
 **High-Performance In-Browser LLM Inference Engine.**
@@ -24,7 +24,7 @@ including streaming, JSON-mode, function-calling (WIP), etc.
 
 We can bring a lot of fun opportunities to build AI assistants for everyone and enable privacy while enjoying GPU acceleration.
 
-You can use WebLLM as a base [npm package](https://www.npmjs.com/package/@mlc-ai/web-llm) and build your own web application on top of it by following the examples below. This project is a companion project of [MLC LLM](https://github.com/mlc-ai/mlc-llm), which enables universal deployment of LLM across hardware environments.
+You can use WebLLM as a base [npm package](https://www.npmjs.com/package/@droptile/web-llm) and build your own web application on top of it by following the examples below. This project is a companion project of [MLC LLM](https://github.com/mlc-ai/mlc-llm), which enables universal deployment of LLM across hardware environments.
 
 <div align="center">
 
@@ -87,32 +87,32 @@ The package is designed in a modular way to hook to any of the UI components.
 
 ```sh
 # npm
-npm install @mlc-ai/web-llm
+npm install @droptile/web-llm
 # yarn
-yarn add @mlc-ai/web-llm
+yarn add @droptile/web-llm
 # or pnpm
-pnpm install @mlc-ai/web-llm
+pnpm install @droptile/web-llm
 ```
 
 Then import the module in your code.
 
 ```typescript
 // Import everything
-import * as webllm from "@mlc-ai/web-llm";
+import * as webllm from "@droptile/web-llm";
 // Or only import what you need
-import { CreateMLCEngine } from "@mlc-ai/web-llm";
+import { CreateMLCEngine } from "@droptile/web-llm";
 ```
 
 #### CDN Delivery
 
-Thanks to [jsdelivr.com](https://www.jsdelivr.com/package/npm/@mlc-ai/web-llm), WebLLM can be imported directly through URL and work out-of-the-box on cloud development platforms like [jsfiddle.net](https://jsfiddle.net/), [Codepen.io](https://codepen.io/), and [Scribbler](https://scribbler.live):
+Thanks to [jsdelivr.com](https://www.jsdelivr.com/package/npm/@droptile/web-llm), WebLLM can be imported directly through URL and work out-of-the-box on cloud development platforms like [jsfiddle.net](https://jsfiddle.net/), [Codepen.io](https://codepen.io/), and [Scribbler](https://scribbler.live):
 
 ```javascript
-import * as webllm from "https://esm.run/@mlc-ai/web-llm";
+import * as webllm from "https://esm.run/@droptile/web-llm";
 ```
 It can also be dynamically imported as:
 ```javascript
-const webllm = await import ("https://esm.run/@mlc-ai/web-llm");
+const webllm = await import ("https://esm.run/@droptile/web-llm");
 ```
 
 ### Create MLCEngine
@@ -122,7 +122,7 @@ Most operations in WebLLM are invoked through the `MLCEngine` interface. You can
 (Note that loading models requires downloading and it can take a significant amount of time for the very first run without caching previously. You should properly handle this asynchronous call.)
 
 ```typescript
-import { CreateMLCEngine } from "@mlc-ai/web-llm";
+import { CreateMLCEngine } from "@droptile/web-llm";
 
 // Callback function to update model loading progress
 const initProgressCallback = (initProgress) => {
