@@ -1,5 +1,5 @@
 {
-  "name": "@mlc-ai/web-llm",
+  "name": "@droptile/web-llm",
   "version": "0.2.78",
   "description": "Hardware accelerated language model chats on browsers",
   "main": "lib/index.js",
@@ -17,15 +17,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mlc-ai/web-llm"
+    "url": "git+https://github.com/droptile/web-llm"
   },
   "keywords": [
     "llm",
     "large language model",
-    "machine learning"
+    "machine learning",
+    "webgpu",
+    "browser"
   ],
   "license": "Apache-2.0",
-  "homepage": "https://github.com/mlc-ai/web-llm",
+  "homepage": "https://github.com/droptile/web-llm",
   "devDependencies": {
     "@mlc-ai/web-tokenizers": "^0.1.5",
     "@next/eslint-plugin-next": "^14.2.3",
