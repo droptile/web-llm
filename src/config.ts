@@ -311,16 +311,17 @@ export const prebuiltAppConfig: AppConfig = {
   model_list: [
     //triarii
     {
-    model: "https://huggingface.co/droptile/Meta-Llama-3.1-8B-Instruct-abliterated-q4f16_1-MLC", //it doesnt like that two items have the same key, so lets compile a
-    model_id: "Meta-Llama-3.1-8B-Instruct-abliterated-q4f16_1-MLC", //new model and see if that works, with new links ofc
-    model_lib: 
-      "https://raw.githubusercontent.com/mlc-ai/binary-mlc-llm-libs/main/web-llm-models/" +
-      "v0_2_48" +
-      "/Llama-3_1-8B-Instruct-q4f16_1-ctx4k_cs1k-webgpu.wasm",
-    vram_required_MB: 4598.34,
-    low_resource_required: true,
-    overrides: {
-      context_window_size: 1024,
+      model:
+        "https://huggingface.co/droptile/Meta-Llama-3.1-8B-Instruct-Triarii-q4f16_1-MLC", //it doesnt like that two items have the same key, so lets compile a
+      model_id: "Meta-Llama-3.1-8B-Instruct-Triarii-q4f16_1-MLC", //new model and see if that works, with new links ofc
+      model_lib:
+        "https://raw.githubusercontent.com/mlc-ai/binary-mlc-llm-libs/main/web-llm-models/" +
+        "v0_2_48" +
+        "/Llama-3_1-8B-Instruct-q4f16_1-ctx4k_cs1k-webgpu.wasm",
+      vram_required_MB: 4598.34,
+      low_resource_required: true,
+      overrides: {
+        context_window_size: 1024,
       },
     },
     // Llama-3.2
